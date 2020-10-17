@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-12T21:49:52 MDT" name="Default suite" finished-at="2020-10-12T21:50:03 MDT" duration-ms="11075">
+    <groups>
+    </groups>
+    <test started-at="2020-10-12T21:49:52 MDT" name="Default test" finished-at="2020-10-12T21:50:03 MDT" duration-ms="11075">
+      <class name="test.ToolsQA_TestNG">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.ToolsQA_TestNG@124c278f]" started-at="2020-10-12T21:49:52 MDT" name="setUpTest" finished-at="2020-10-12T21:49:56 MDT" duration-ms="3691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method signature="alertsForm()[pri:0, instance:test.ToolsQA_TestNG@124c278f]" started-at="2020-10-12T21:49:56 MDT" name="alertsForm" finished-at="2020-10-12T21:50:00 MDT" duration-ms="4760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertsForm -->
+        <test-method signature="checkBoxForm()[pri:0, instance:test.ToolsQA_TestNG@124c278f]" started-at="2020-10-12T21:50:00 MDT" name="checkBoxForm" finished-at="2020-10-12T21:50:03 MDT" duration-ms="2586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBoxForm -->
+        <test-method signature="textBoxForm()[pri:0, instance:test.ToolsQA_TestNG@124c278f]" started-at="2020-10-12T21:50:03 MDT" name="textBoxForm" finished-at="2020-10-12T21:50:03 MDT" duration-ms="1" status="FAIL">
+          <exception class="java.lang.Error">
+            <message>
+              <![CDATA[Unresolved compilation problem: 
+emaiil cannot be resolved to a variable
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Error: Unresolved compilation problem: 
+emaiil cannot be resolved to a variable
+
+at test.ToolsQA_TestNG.textBoxForm(ToolsQA_TestNG.java:63)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1507)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Error -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- textBoxForm -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.ToolsQA_TestNG@124c278f]" started-at="2020-10-12T21:50:03 MDT" name="tearDownTest" finished-at="2020-10-12T21:50:03 MDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.ToolsQA_TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
