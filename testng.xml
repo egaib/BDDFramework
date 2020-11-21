@@ -1,14 +1,17 @@
 
 <suite parallel="classes" name="Suite1">
   <test thread-count="5" parallel="classes" name="Test1">
-
     
     <classes>
       <class name="test.ToolsQA_TestNG"/>
         <methods>
-        	<exclude name="checkBoxForm"/>
+        	<include name="checkBoxForm" />
         	<include name="textBoxForm" />
-        	<exclude name="alertsForm" />
+        	<include name="textBoxForm2" />
+        	<include name="radioButton" />
+        	<include name="alertsForm" />
+        	
+        	
         </methods>
     </classes>
   </test> <!-- Test1 -->

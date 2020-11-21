@@ -6,7 +6,8 @@
       <class name="test.ToolsQA_TestNG">
         <methods>
           <include name="tearDownTest"/>
-          <include name="textBoxForm"/>
+          <include name="getLandingPage"/>
+          <include name="alertsForm"/>
           <include name="setUpTest"/>
         </methods>
       </class> <!-- test.ToolsQA_TestNG -->
