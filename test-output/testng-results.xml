@@ -1,165 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-21T15:28:39 MST" name="Suite1" finished-at="2020-11-21T15:28:59 MST" duration-ms="20547">
+  <suite started-at="2020-12-26T11:06:13 MST" name="ToolsQA_TestSuite" finished-at="2020-12-26T11:06:35 MST" duration-ms="22641">
     <groups>
     </groups>
-    <test started-at="2020-11-21T15:28:39 MST" name="Test1" finished-at="2020-11-21T15:28:59 MST" duration-ms="20547">
-      <class name="test.ToolsQA_TestNG">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:39 MST" name="setUpTest" finished-at="2020-11-21T15:28:43 MST" duration-ms="3703" status="PASS">
+    <test started-at="2020-12-26T11:06:13 MST" name="test" finished-at="2020-12-26T11:06:35 MST" duration-ms="22641">
+      <class name="test.Browser_Tests">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Browser_Tests@25d250c6]" started-at="2020-12-26T11:06:13 MST" name="getLandingPage" finished-at="2020-12-26T11:06:20 MST" duration-ms="7119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method signature="BW1()[pri:0, instance:test.Browser_Tests@25d250c6]" started-at="2020-12-26T11:06:20 MST" name="BW1" finished-at="2020-12-26T11:06:20 MST" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BW1 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Browser_Tests@25d250c6]" started-at="2020-12-26T11:06:20 MST" name="tearDownTest" finished-at="2020-12-26T11:06:22 MST" duration-ms="1432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.Browser_Tests -->
+      <class name="test.TextBox_Tests">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:13 MST" name="setUpTest" finished-at="2020-12-26T11:06:13 MST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:43 MST" name="getLandingPage" finished-at="2020-11-21T15:28:47 MST" duration-ms="4766" status="PASS">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:13 MST" name="getLandingPage" finished-at="2020-12-26T11:06:20 MST" duration-ms="7493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method signature="checkBoxForm()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:47 MST" name="checkBoxForm" finished-at="2020-11-21T15:28:48 MST" duration-ms="129" status="PASS">
+        <test-method signature="TB1()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:20 MST" name="TB1" finished-at="2020-12-26T11:06:21 MST" duration-ms="541" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkBoxForm -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:48 MST" name="getLandingPage" finished-at="2020-11-21T15:28:50 MST" duration-ms="2431" status="PASS">
+        </test-method> <!-- TB1 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:21 MST" name="tearDownTest" finished-at="2020-12-26T11:06:22 MST" duration-ms="813" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method signature="textBoxForm()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:50 MST" name="textBoxForm" finished-at="2020-11-21T15:28:50 MST" duration-ms="364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- textBoxForm -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:50 MST" name="getLandingPage" finished-at="2020-11-21T15:28:53 MST" duration-ms="2435" status="PASS">
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:22 MST" name="getLandingPage" finished-at="2020-12-26T11:06:28 MST" duration-ms="6537" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method signature="textBoxForm2()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:53 MST" name="textBoxForm2" finished-at="2020-11-21T15:28:53 MST" duration-ms="393" status="PASS">
+        <test-method signature="TB2()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:28 MST" name="TB2" finished-at="2020-12-26T11:06:29 MST" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- textBoxForm2 -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:53 MST" name="getLandingPage" finished-at="2020-11-21T15:28:56 MST" duration-ms="2504" status="PASS">
+        </test-method> <!-- TB2 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:29 MST" name="tearDownTest" finished-at="2020-12-26T11:06:30 MST" duration-ms="805" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method signature="radioButton()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:56 MST" name="radioButton" finished-at="2020-11-21T15:28:57 MST" duration-ms="1265" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <input type="radio" id="yesRadio" name="like" class="custom-control-input"> is not clickable at point (337, 286). Other element would receive the click: <label class="custom-control-label" for="yesRadio">...</label>
-  (Session info: chrome=87.0.4280.66)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SBK79B5', ip: '172.24.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Evan\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b2534de73c3dbba1429c65d7c0c5eef1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="radio" id="yesRadio" name="like" class="custom-control-input"> is not clickable at point (337, 286). Other element would receive the click: <label class="custom-control-label" for="yesRadio">...</label>
-  (Session info: chrome=87.0.4280.66)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SBK79B5', ip: '172.24.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Evan\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b2534de73c3dbba1429c65d7c0c5eef1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at pages.ToolsQA_ElementPageObjects.clickYesRadioButton(ToolsQA_ElementPageObjects.java:129)
-at test.ToolsQA_TestNG.radioButton(ToolsQA_TestNG.java:120)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:830)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioButton -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:57 MST" name="getLandingPage" finished-at="2020-11-21T15:28:59 MST" duration-ms="2419" status="PASS">
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.TextBox_Tests -->
+      <class name="test.Alerts_Tests">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:13 MST" name="getLandingPage" finished-at="2020-12-26T11:06:20 MST" duration-ms="7584" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method signature="alertsForm()[pri:0, instance:test.ToolsQA_TestNG@47542153]" started-at="2020-11-21T15:28:59 MST" name="alertsForm" finished-at="2020-11-21T15:28:59 MST" duration-ms="93" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"item-1"}
-  (Session info: chrome=87.0.4280.66)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SBK79B5', ip: '172.24.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Evan\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b2534de73c3dbba1429c65d7c0c5eef1
-*** Element info: {Using=xpath, value=item-1}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"item-1"}
-  (Session info: chrome=87.0.4280.66)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-SBK79B5', ip: '172.24.96.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Evan\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:59910}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: b2534de73c3dbba1429c65d7c0c5eef1
-*** Element info: {Using=xpath, value=item-1}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at pages.ToolsQA_AlertsPageObjects.clickAlertsFormButton(ToolsQA_AlertsPageObjects.java:60)
-at test.ToolsQA_TestNG.alertsForm(ToolsQA_TestNG.java:133)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:830)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="AL1()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:20 MST" name="AL1" finished-at="2020-12-26T11:06:21 MST" duration-ms="337" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alertsForm -->
-      </class> <!-- test.ToolsQA_TestNG -->
-    </test> <!-- Test1 -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- AL1 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:21 MST" name="tearDownTest" finished-at="2020-12-26T11:06:22 MST" duration-ms="957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:22 MST" name="getLandingPage" finished-at="2020-12-26T11:06:29 MST" duration-ms="6746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method signature="AL2()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:29 MST" name="AL2" finished-at="2020-12-26T11:06:35 MST" duration-ms="6345" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AL2 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:35 MST" name="tearDownTest" finished-at="2020-12-26T11:06:35 MST" duration-ms="636" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.Alerts_Tests -->
+    </test> <!-- test -->
+  </suite> <!-- ToolsQA_TestSuite -->
 </testng-results>

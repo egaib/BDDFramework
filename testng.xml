@@ -1,18 +1,42 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="ToolsQA_TestSuite" parallel="classes">
+	<test thread-count="5" name="test" parallel="classes">
 
-<suite parallel="classes" name="Suite1">
-  <test thread-count="5" parallel="classes" name="Test1">
-    
-    <classes>
-      <class name="test.ToolsQA_TestNG"/>
-        <methods>
-        	<include name="checkBoxForm" />
-        	<include name="textBoxForm" />
-        	<include name="textBoxForm2" />
-        	<include name="radioButton" />
-        	<include name="alertsForm" />
-        	
-        	
-        </methods>
-    </classes>
-  </test> <!-- Test1 -->
+		<classes>
+		
+		  
+			<class name="test.TextBox_Tests">
+				<methods>
+					<include name="TB1" />
+					<include name="TB2" />
+
+				</methods>
+			</class>
+
+			
+			<class name="test.Alerts_Tests">
+				<methods>
+					<include name="AL1" />
+					<include name="AL2" />
+				</methods>
+			</class>
+			
+			 
+			
+			<class name="test.Browser_Tests">
+				<methods>
+					<include name="BW1" />
+
+				</methods>
+			</class>
+			
+			
+		</classes>
+
+
+
+
+
+
+	</test> <!-- Test1 -->
 </suite> <!-- Suite1 -->
