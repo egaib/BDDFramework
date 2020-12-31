@@ -1,77 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="7" passed="5" failed="0" skipped="0">
+<testng-results ignored="3" total="12" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-26T11:06:13 MST" name="ToolsQA_TestSuite" finished-at="2020-12-26T11:06:35 MST" duration-ms="22641">
+  <suite started-at="2020-12-31T09:22:53 MST" name="ToolsQA_TestSuite" finished-at="2020-12-31T09:23:34 MST" duration-ms="41609">
     <groups>
     </groups>
-    <test started-at="2020-12-26T11:06:13 MST" name="test" finished-at="2020-12-26T11:06:35 MST" duration-ms="22641">
-      <class name="test.Browser_Tests">
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Browser_Tests@25d250c6]" started-at="2020-12-26T11:06:13 MST" name="getLandingPage" finished-at="2020-12-26T11:06:20 MST" duration-ms="7119" status="PASS">
+    <test started-at="2020-12-31T09:22:53 MST" name="test" finished-at="2020-12-31T09:23:34 MST" duration-ms="41609">
+      <class name="test.Buttons_Tests">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Buttons_Tests@419c5f1a]" started-at="2020-12-31T09:22:53 MST" name="getLandingPage" finished-at="2020-12-31T09:23:01 MST" duration-ms="8081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method signature="BW1()[pri:0, instance:test.Browser_Tests@25d250c6]" started-at="2020-12-26T11:06:20 MST" name="BW1" finished-at="2020-12-26T11:06:20 MST" duration-ms="341" status="PASS">
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Buttons_Tests@419c5f1a]" started-at="2020-12-31T09:23:01 MST" name="AlertsTestSetup" finished-at="2020-12-31T09:23:01 MST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="BT1()[pri:0, instance:test.Buttons_Tests@419c5f1a]" started-at="2020-12-31T09:23:01 MST" name="BT1" finished-at="2020-12-31T09:23:01 MST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT1 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Buttons_Tests@419c5f1a]" started-at="2020-12-31T09:23:01 MST" name="tearDownTest" finished-at="2020-12-31T09:23:02 MST" duration-ms="643" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Buttons_Tests@419c5f1a]" started-at="2020-12-31T09:23:02 MST" name="getLandingPage" finished-at="2020-12-31T09:23:10 MST" duration-ms="8183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Buttons_Tests@419c5f1a]" started-at="2020-12-31T09:23:10 MST" name="AlertsTestSetup" finished-at="2020-12-31T09:23:10 MST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="BT2()[pri:0, instance:test.Buttons_Tests@419c5f1a]" started-at="2020-12-31T09:23:10 MST" name="BT2" finished-at="2020-12-31T09:23:10 MST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT2 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Buttons_Tests@419c5f1a]" started-at="2020-12-31T09:23:10 MST" name="tearDownTest" finished-at="2020-12-31T09:23:12 MST" duration-ms="1416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.Buttons_Tests -->
+      <class name="test.Browser_Tests">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Browser_Tests@769e7ee8]" started-at="2020-12-31T09:22:53 MST" name="getLandingPage" finished-at="2020-12-31T09:23:00 MST" duration-ms="7732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="BrowserTestSetup()[pri:0, instance:test.Browser_Tests@769e7ee8]" started-at="2020-12-31T09:23:00 MST" name="BrowserTestSetup" finished-at="2020-12-31T09:23:01 MST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserTestSetup -->
+        <test-method signature="BW1()[pri:0, instance:test.Browser_Tests@769e7ee8]" started-at="2020-12-31T09:23:01 MST" name="BW1" finished-at="2020-12-31T09:23:03 MST" duration-ms="2650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BW1 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Browser_Tests@25d250c6]" started-at="2020-12-26T11:06:20 MST" name="tearDownTest" finished-at="2020-12-26T11:06:22 MST" duration-ms="1432" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Browser_Tests@769e7ee8]" started-at="2020-12-31T09:23:03 MST" name="tearDownTest" finished-at="2020-12-31T09:23:04 MST" duration-ms="713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- test.Browser_Tests -->
       <class name="test.TextBox_Tests">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:13 MST" name="setUpTest" finished-at="2020-12-26T11:06:13 MST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:22:53 MST" name="setUpTest" finished-at="2020-12-31T09:22:53 MST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:13 MST" name="getLandingPage" finished-at="2020-12-26T11:06:20 MST" duration-ms="7493" status="PASS">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:22:53 MST" name="getLandingPage" finished-at="2020-12-31T09:23:00 MST" duration-ms="7523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method signature="TB1()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:20 MST" name="TB1" finished-at="2020-12-26T11:06:21 MST" duration-ms="541" status="PASS">
+        <test-method is-config="true" signature="TextBoxTestSetup()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:23:00 MST" name="TextBoxTestSetup" finished-at="2020-12-31T09:23:00 MST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TextBoxTestSetup -->
+        <test-method signature="TB1()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:23:00 MST" name="TB1" finished-at="2020-12-31T09:23:01 MST" duration-ms="327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TB1 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:21 MST" name="tearDownTest" finished-at="2020-12-26T11:06:22 MST" duration-ms="813" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:23:01 MST" name="tearDownTest" finished-at="2020-12-31T09:23:02 MST" duration-ms="1122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:22 MST" name="getLandingPage" finished-at="2020-12-26T11:06:28 MST" duration-ms="6537" status="PASS">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:23:02 MST" name="getLandingPage" finished-at="2020-12-31T09:23:10 MST" duration-ms="8489" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method signature="TB2()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:28 MST" name="TB2" finished-at="2020-12-26T11:06:29 MST" duration-ms="744" status="PASS">
+        <test-method is-config="true" signature="TextBoxTestSetup()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:23:10 MST" name="TextBoxTestSetup" finished-at="2020-12-31T09:23:11 MST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TextBoxTestSetup -->
+        <test-method signature="TB2()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:23:11 MST" name="TB2" finished-at="2020-12-31T09:23:11 MST" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TB2 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@4445629]" started-at="2020-12-26T11:06:29 MST" name="tearDownTest" finished-at="2020-12-26T11:06:30 MST" duration-ms="805" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@56de5251]" started-at="2020-12-31T09:23:11 MST" name="tearDownTest" finished-at="2020-12-31T09:23:13 MST" duration-ms="1778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- test.TextBox_Tests -->
       <class name="test.Alerts_Tests">
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:13 MST" name="getLandingPage" finished-at="2020-12-26T11:06:20 MST" duration-ms="7584" status="PASS">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:22:53 MST" name="getLandingPage" finished-at="2020-12-31T09:23:07 MST" duration-ms="14352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method signature="AL1()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:20 MST" name="AL1" finished-at="2020-12-26T11:06:21 MST" duration-ms="337" status="PASS">
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:07 MST" name="AlertsTestSetup" finished-at="2020-12-31T09:23:07 MST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="AL1()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:07 MST" name="AL1" finished-at="2020-12-31T09:23:07 MST" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AL1 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:21 MST" name="tearDownTest" finished-at="2020-12-26T11:06:22 MST" duration-ms="957" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:07 MST" name="tearDownTest" finished-at="2020-12-31T09:23:08 MST" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:22 MST" name="getLandingPage" finished-at="2020-12-26T11:06:29 MST" duration-ms="6746" status="PASS">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:08 MST" name="getLandingPage" finished-at="2020-12-31T09:23:14 MST" duration-ms="6266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method signature="AL2()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:29 MST" name="AL2" finished-at="2020-12-26T11:06:35 MST" duration-ms="6345" status="PASS">
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:14 MST" name="AlertsTestSetup" finished-at="2020-12-31T09:23:14 MST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="AL2()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:14 MST" name="AL2" finished-at="2020-12-31T09:23:20 MST" duration-ms="6072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AL2 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@45b9a632]" started-at="2020-12-26T11:06:35 MST" name="tearDownTest" finished-at="2020-12-26T11:06:35 MST" duration-ms="636" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:20 MST" name="tearDownTest" finished-at="2020-12-31T09:23:21 MST" duration-ms="615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:21 MST" name="getLandingPage" finished-at="2020-12-31T09:23:27 MST" duration-ms="6104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:27 MST" name="AlertsTestSetup" finished-at="2020-12-31T09:23:27 MST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="AL3()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:27 MST" name="AL3" finished-at="2020-12-31T09:23:27 MST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AL3 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:27 MST" name="tearDownTest" finished-at="2020-12-31T09:23:28 MST" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:28 MST" name="getLandingPage" finished-at="2020-12-31T09:23:33 MST" duration-ms="5282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:33 MST" name="AlertsTestSetup" finished-at="2020-12-31T09:23:33 MST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="AL4()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:33 MST" name="AL4" finished-at="2020-12-31T09:23:34 MST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AL4 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@12b0404f]" started-at="2020-12-31T09:23:34 MST" name="tearDownTest" finished-at="2020-12-31T09:23:34 MST" duration-ms="656" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->

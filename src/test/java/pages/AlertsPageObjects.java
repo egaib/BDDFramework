@@ -3,34 +3,28 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AlertsPageObjects {
 
-	//Declare Webdriver
+	// Declare Webdriver
 	WebDriver driver = null;
 
-	//Locator declarations
-	//Alerts, Frame & Windows drop-down list
+	// Locators
 	By mainAlertsAppButton = By.xpath("//h5[contains(text(),'Frame')]");
-	By alertsFormButton = By.xpath("//span[contains(text(),'Alerts')]"); 
-	
-	
-	//Alerts form
+	By alertsFormButton = By.xpath("//span[contains(text(),'Alerts')]");
 	By topAlertButton = By.id("alertButton");
 	By timerAlertButton = By.id("timerAlertButton");
 	By confirmAlertButton = By.id("confirmButton");
+	By confirmResultText = By.id("confirmResult");
 	By promptAlertButton = By.id("promtButton");
+	By promptResultText = By.id("promptResult");
 
-
-	//Constructor
-	public AlertsPageObjects (WebDriver driver) {
+	// Initialize webdriver
+	public AlertsPageObjects(WebDriver driver) {
 		this.driver = driver;
 	}
 
-
-	//Alerts form methods
+	// Alerts page methods
 	public void clickMainAlertsAppButton() {
 		driver.findElement(mainAlertsAppButton).click();
 	}
@@ -47,5 +41,20 @@ public class AlertsPageObjects {
 		driver.findElement(timerAlertButton).sendKeys(Keys.ENTER);
 	}
 
+	public void clickConfirmAlertButton() {
+		driver.findElement(confirmAlertButton).sendKeys(Keys.ENTER);
+	}
+
+	public String getConfirmResultText() {
+		return driver.findElement(confirmResultText).getText();
+	}
+
+	public void clickPromptAlertButton() {
+		driver.findElement(promptAlertButton).sendKeys(Keys.ENTER);
+	}
+
+	public String getPromptResultText() {
+		return driver.findElement(promptResultText).getText();
+	}
 
 }
