@@ -22,16 +22,16 @@ public class Buttons_Tests extends TestBaseSetup {
 
 	@Test
 	public void BT1() {
-		// Double click then assert against response message for confirmation
 		buttonsPageObj.doubleClickDoubleClickButton();
+		Test_Utilities.saveScreenshot(driver, "BT1-DoubleClickButton");
 		assertEquals(buttonsPageObj.getDoubleClickMessage(), "You have done a double click");
 
 	}
 
 	@Test
 	public void BT2() {
-		// Right click then assert against response message for confirmation
 		buttonsPageObj.rightClickRightClickButton();
+		Test_Utilities.saveScreenshot(driver, "BT2-RightClickButton");
 		assertEquals(buttonsPageObj.getRightClickMessage(), "You have done a right click");
 	}
 

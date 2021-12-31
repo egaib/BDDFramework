@@ -28,35 +28,36 @@ public class Alerts_Tests extends TestBaseSetup {
 	@Test
 	public void AL1() {
 
-		// From AlertsPage, click the 1st alert button
+		Test_Utilities.saveScreenshot(driver, "AL1-ClickTopAlertButton");
 		alertsPageObj.clickTopAlertButton();
 
-		// Verify alert opened with specified message
+		//Note an error occurs when attempting to screenshot when alert is present
+
 		String alertMessage = driver.switchTo().alert().getText();
 		driver.switchTo().alert().accept();
+		Test_Utilities.saveScreenshot(driver, "AL1-AcceptAlert");
 
-		// Compare alert message to expected message
 		assertEquals(alertMessage, "You clicked a button");
 	}
 
 	@Test
 	public void AL2() {
 
-		// From AlertsPage, click the 2nd alert button
+		Test_Utilities.saveScreenshot(driver, "AL2-ClickTimerAlertButton");
 		alertsPageObj.clickTimerAlertButton();
 
-		// Wait for >5 seconds for alert to show
+		// Wait for >5 seconds for alert to show (explicit wait used to match button functionality)
 		try {
 			Thread.sleep(6000);
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-
-		// Get alert message and accept alert
+		
+		
 		String alertMessage = driver.switchTo().alert().getText();
 		driver.switchTo().alert().accept();
+		Test_Utilities.saveScreenshot(driver, "AL2-AcceptAlert");
 
-		// Compare alert message to expected message
 		assertEquals(alertMessage, "This alert appeared after 5 seconds");
 
 	}
@@ -64,17 +65,14 @@ public class Alerts_Tests extends TestBaseSetup {
 	@Test
 	public void AL3() {
 
-		// From AlertsPage, click the 3rd alert button
+		Test_Utilities.saveScreenshot(driver, "AL3-ClickConfirmAlertButton");
 		alertsPageObj.clickConfirmAlertButton();
 
-		// Get alert message and dismiss alert
 		String alertMessage = driver.switchTo().alert().getText();
 		driver.switchTo().alert().dismiss();
-
-		// AssertEquals that the alert message equals the expected message
+		Test_Utilities.saveScreenshot(driver, "AL3-AcceptAlert");
+		
 		assertEquals(alertMessage, "Do you confirm action?");
-
-		// AssertTrue that the alert was dismissed
 		assertTrue(alertsPageObj.getConfirmResultText().contains("Cancel"));
 
 	}
@@ -82,14 +80,13 @@ public class Alerts_Tests extends TestBaseSetup {
 	@Test
 	public void AL4() {
 
-		// From AlertsPage, click the 4th alert button
+		Test_Utilities.saveScreenshot(driver, "AL4-ClickPromptAlertButton");
 		alertsPageObj.clickPromptAlertButton();
 
-		// Enter name into alert text box and accept
 		driver.switchTo().alert().sendKeys(name);
 		driver.switchTo().alert().accept();
-
-		// AssertEquals that the entered name is shown
+		Test_Utilities.saveScreenshot(driver, "AL4-AcceptAlert");		
+		
 		assertTrue(alertsPageObj.getPromptResultText().contains(name));
 
 	}

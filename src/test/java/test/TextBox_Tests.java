@@ -27,21 +27,17 @@ public class TextBox_Tests extends TestBaseSetup {
 
 	@Test
 	public void TB1() {
-		// From TextBoxPage, enter fullName in text box, and submit form
 		textBoxPageObj.setTextInFullNameTextBox(fullName);
+		Test_Utilities.saveScreenshot(driver, "TB1-SetNameInNameTextbox");
 		textBoxPageObj.clickSubmitButtonTextBoxForm();
-
-		// Assert that output contains fullName as entered
 		assertTrue(textBoxPageObj.fullNameConfirmationText().contains(fullName));
 	}
 
 	@Test
 	public void TB2() {
-		// From TextBoxPage, enter email in text box, and submit form
 		textBoxPageObj.setTextInEmailTextBox(email);
+		Test_Utilities.saveScreenshot(driver, "TB2-SetEmailInEmailTextbox");
 		textBoxPageObj.clickSubmitButtonTextBoxForm();
-
-		// Assert that output box contains email as entered
 		assertTrue(textBoxPageObj.emailConfirmationText().contains(email));
 	}
 

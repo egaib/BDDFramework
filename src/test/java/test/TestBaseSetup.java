@@ -12,34 +12,27 @@ import org.testng.annotations.BeforeSuite;
 
 public class TestBaseSetup {
 
-	// Declare Selenium WebDriver object
 	WebDriver driver = null;
+	
 
 	// Setup Chromedriver before all tests
 	@BeforeSuite
 	public void setUpTest() {
-		// Set project path and Chromedriver path
 		String projectPath = System.getProperty("user.dir");
-
-		// Set Chromedriver path
 		System.setProperty("webdriver.chrome.driver", projectPath + "\\chromedriver\\chromedriver.exe");
-
 	}
 
-	// Get the landing page and wait for the page to load before each test
+	// Before every test, instantiate a new driver, get the landing page, and ensure it has loaded
 	@BeforeMethod
 	public void getLandingPage() {
-
-		// Initialize Selenium WebDriver object
 		driver = new ChromeDriver();
 
-		// Use webdriver to get the landing page
+		// Set the landing page
 		driver.get("https://demoqa.com");
 
-		// Explicit dynamic wait until Elements text is loaded
+		// Set an explicit dynamic wait to confirm the landing page has loaded
 		new WebDriverWait(driver, 5)
 				.until(ExpectedConditions.textToBe(By.xpath("//h5[contains(text(),'Elements')]"), "Elements"));
-
 	}
 
 	// Teardown after each test is complete

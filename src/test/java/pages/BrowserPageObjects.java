@@ -1,12 +1,17 @@
 package pages;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import test.Test_Utilities;
+
 public class BrowserPageObjects {
 
-	// Declare Webdriver
 	WebDriver driver = null;
+	
+
 
 	// Locators
 	By mainAlertsAppButton = By.xpath("//h5[contains(text(),'Frame')]");
@@ -16,7 +21,8 @@ public class BrowserPageObjects {
 	By newWindowMessageButton = By.id("messageWindowButton");
 	By newTabMessageText = By.id("sampleHeading");
 
-	// Initialize webdriver
+	
+	
 	public BrowserPageObjects(WebDriver driver) {
 		this.driver = driver;
 	}
@@ -32,6 +38,7 @@ public class BrowserPageObjects {
 
 	public void clickNewTabButton() {
 		driver.findElement(newTabButton).click();
+		
 	}
 
 	public String getNewTabMessageText() {

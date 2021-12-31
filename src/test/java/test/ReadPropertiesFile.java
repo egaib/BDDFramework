@@ -17,19 +17,24 @@ public class ReadPropertiesFile {
 		InputStream is = null;
 
 		try {
-			is = new FileInputStream(fileName);
+			//is = new FileInputStream("config.properties");
+		//	is = getClass().getClassLoader().getResourceAsStream(fileName);
+			prop.load(is);
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
 
-		try {
-			prop.load(is);
-		} catch (IOException e2) {
-			e2.printStackTrace();
-		}
+		//try {
+		//	prop.load(is);
+		//} catch (IOException e2) {
+		//	e2.printStackTrace();
+		//}
 
 		System.out.println(prop.getProperty("fullName"));
-
 	}
 
+	
+	
+	
+	
 }

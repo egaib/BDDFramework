@@ -25,25 +25,22 @@ public class Browser_Tests extends TestBaseSetup {
 
 	@Test
 	public void BW1() {
-
-		// Open new tab
 		browserPageObj.clickNewTabButton();
-
-		// Get window handle
+		Test_Utilities.saveScreenshot(driver, "BW1-ClickNewTabButton");
+		
 		String parentWindowHandle = driver.getWindowHandle();
 
-		// Get window handles for all open windows and store in a set
 		Set<String> allWindowHandles = driver.getWindowHandles();
 		Iterator<String> iterator = allWindowHandles.iterator();
 
-		// Iterate through all window handles to find child window
+		// Iterate through all window handles to find child window, then switch to it
 		while (iterator.hasNext()) {
 			String childWindowHandle = iterator.next();
 			System.out.println(childWindowHandle);
 
-			// Switch to child window
 			if (!parentWindowHandle.equalsIgnoreCase(childWindowHandle)) {
 				driver.switchTo().window(childWindowHandle);
+				Test_Utilities.saveScreenshot(driver, "BW1-SwitchToChildWindow");
 			}
 		}
 
