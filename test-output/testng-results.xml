@@ -1,91 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="4" total="12" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-29T16:08:12 MST" name="Default suite" finished-at="2021-12-29T16:08:21 MST" duration-ms="8879">
+  <suite started-at="2022-01-03T17:21:41 MST" name="ToolsQA_TestSuite" finished-at="2022-01-03T17:22:08 MST" duration-ms="26675">
     <groups>
     </groups>
-    <test started-at="2021-12-29T16:08:12 MST" name="Default test" finished-at="2021-12-29T16:08:21 MST" duration-ms="8879">
-      <class name="test.Alerts_Tests">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.Alerts_Tests@1329eff]" started-at="2021-12-29T16:08:12 MST" name="setUpTest" finished-at="2021-12-29T16:08:12 MST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@1329eff]" started-at="2021-12-29T16:08:13 MST" name="getLandingPage" finished-at="2021-12-29T16:08:16 MST" duration-ms="3967" status="PASS">
+    <test started-at="2022-01-03T17:21:41 MST" name="test" finished-at="2022-01-03T17:22:08 MST" duration-ms="26675">
+      <class name="test.Buttons_Tests">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:41 MST" name="getLandingPage" finished-at="2022-01-03T17:21:47 MST" duration-ms="5494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@1329eff]" started-at="2021-12-29T16:08:16 MST" name="AlertsTestSetup" finished-at="2021-12-29T16:08:17 MST" duration-ms="139" status="PASS">
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:47 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:21:47 MST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AlertsTestSetup -->
-        <test-method signature="AL1()[pri:0, instance:test.Alerts_Tests@1329eff]" started-at="2021-12-29T16:08:17 MST" name="AL1" finished-at="2021-12-29T16:08:17 MST" duration-ms="98" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[unexpected alert open: {Alert text : You clicked a button}
-  (Session info: chrome=96.0.4664.110): You clicked a button
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-PSTVIKQ3', ip: '192.168.0.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\EVANGA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c9b0c4f8588931dc1f4bd854ec49e1f5]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : You clicked a button}
-  (Session info: chrome=96.0.4664.110): You clicked a button
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LAPTOP-PSTVIKQ3', ip: '192.168.0.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\EVANGA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59498}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c9b0c4f8588931dc1f4bd854ec49e1f5
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-at test.Test_Utilities.saveScreenshot(Test_Utilities.java:28)
-at test.Alerts_Tests.AL1(Alerts_Tests.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        <test-method signature="BT1()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:47 MST" name="BT1" finished-at="2022-01-03T17:21:47 MST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT1 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:47 MST" name="tearDownTest" finished-at="2022-01-03T17:21:51 MST" duration-ms="4197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:51 MST" name="getLandingPage" finished-at="2022-01-03T17:21:55 MST" duration-ms="3086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:55 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:21:55 MST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="BT2()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:55 MST" name="BT2" finished-at="2022-01-03T17:21:55 MST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT2 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:55 MST" name="tearDownTest" finished-at="2022-01-03T17:21:55 MST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.Buttons_Tests -->
+      <class name="test.Browser_Tests">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Browser_Tests@55b53d44]" started-at="2022-01-03T17:21:41 MST" name="getLandingPage" finished-at="2022-01-03T17:21:45 MST" duration-ms="4125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="BrowserTestSetup()[pri:0, instance:test.Browser_Tests@55b53d44]" started-at="2022-01-03T17:21:45 MST" name="BrowserTestSetup" finished-at="2022-01-03T17:21:46 MST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserTestSetup -->
+        <test-method signature="BW1()[pri:0, instance:test.Browser_Tests@55b53d44]" started-at="2022-01-03T17:21:46 MST" name="BW1" finished-at="2022-01-03T17:21:46 MST" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BW1 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Browser_Tests@55b53d44]" started-at="2022-01-03T17:21:46 MST" name="tearDownTest" finished-at="2022-01-03T17:21:46 MST" duration-ms="135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.Browser_Tests -->
+      <class name="test.TextBox_Tests">
+        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:41 MST" name="setUpTest" finished-at="2022-01-03T17:21:41 MST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:41 MST" name="getLandingPage" finished-at="2022-01-03T17:21:46 MST" duration-ms="4408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="TextBoxTestSetup()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:46 MST" name="TextBoxTestSetup" finished-at="2022-01-03T17:21:46 MST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TextBoxTestSetup -->
+        <test-method signature="TB1()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:46 MST" name="TB1" finished-at="2022-01-03T17:21:46 MST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TB1 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:46 MST" name="tearDownTest" finished-at="2022-01-03T17:21:51 MST" duration-ms="4189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:51 MST" name="getLandingPage" finished-at="2022-01-03T17:21:54 MST" duration-ms="3097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="TextBoxTestSetup()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:54 MST" name="TextBoxTestSetup" finished-at="2022-01-03T17:21:54 MST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TextBoxTestSetup -->
+        <test-method signature="TB2()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:54 MST" name="TB2" finished-at="2022-01-03T17:21:54 MST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TB2 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:54 MST" name="tearDownTest" finished-at="2022-01-03T17:21:54 MST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- test.TextBox_Tests -->
+      <class name="test.Alerts_Tests">
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:41 MST" name="getLandingPage" finished-at="2022-01-03T17:21:48 MST" duration-ms="6453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:48 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:21:48 MST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="AL1()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:48 MST" name="AL1" finished-at="2022-01-03T17:21:48 MST" duration-ms="358" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AL1 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@1329eff]" started-at="2021-12-29T16:08:17 MST" name="tearDownTest" finished-at="2021-12-29T16:08:21 MST" duration-ms="4652" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:48 MST" name="tearDownTest" finished-at="2022-01-03T17:21:52 MST" duration-ms="4199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:52 MST" name="getLandingPage" finished-at="2022-01-03T17:21:56 MST" duration-ms="3121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:56 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:21:56 MST" duration-ms="120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="AL3()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:56 MST" name="AL3" finished-at="2022-01-03T17:21:56 MST" duration-ms="426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AL3 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:56 MST" name="tearDownTest" finished-at="2022-01-03T17:22:00 MST" duration-ms="4232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:22:00 MST" name="getLandingPage" finished-at="2022-01-03T17:22:03 MST" duration-ms="2893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLandingPage -->
+        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:22:03 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:22:03 MST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AlertsTestSetup -->
+        <test-method signature="AL4()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:22:03 MST" name="AL4" finished-at="2022-01-03T17:22:04 MST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AL4 -->
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:22:04 MST" name="tearDownTest" finished-at="2022-01-03T17:22:08 MST" duration-ms="4224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- test.Alerts_Tests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- test -->
+  </suite> <!-- ToolsQA_TestSuite -->
 </testng-results>
