@@ -1,40 +1,29 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="ToolsQA_TestSuite" parallel="classes">
-	<test thread-count="4" name="test" parallel="classes">
-		
+<suite name="BDDFramework" >
+	
+		<parameter name="browser" value="firefox" />
+		<parameter name="platform" value="windows 10" />
+		<parameter name="version" value="latest" />
+	
+	
+ <test name="Sauce1" thread-count="1" parallel="methods"> 
+
 		<!-- Test classes run in parallel -->
 		<classes>
 
-			<class name="test.TextBox_Tests">
+		<!-- 	<class name="test.TestBaseSetup"> -->
+			<class name="test.HomePageTests">
 				<methods>
-					<include name="TB1" />
-					<include name="TB2" />
+					<include name="validateAnchorBraceletInStore" />
 				</methods>
 			</class>
-
-			<class name="test.Buttons_Tests">
+			
+			<class name="test.ContactPageTests">
 				<methods>
-					<include name="BT1" />
-					<include name="BT2" />
+					<include name="validateContactPageEmail" />
 				</methods>
 			</class>
-
-			<class name="test.Alerts_Tests">
-				<methods>
-					<include name="AL1" />
-					<exclude name="AL2" />
-					<include name="AL3" />
-					<include name="AL4" />
-				</methods>
-			</class>
-
-			<class name="test.Browser_Tests">
-				<methods>
-					<include name="BW1" />
-				</methods>
-			</class>
-
+			
 		</classes>
-
-	</test> <!-- Test1 -->
+	</test> 
 </suite> <!-- Suite1 -->

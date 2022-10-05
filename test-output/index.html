@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,6 +24,7 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
@@ -37,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-ToolsQA_TestSuite" class="navigator-link">
-              <span class="suite-name border-passed">ToolsQA_TestSuite</span>
+            <a href="#" panel-name="suite-BDDFramework" class="navigator-link">
+              <span class="suite-name border-passed">BDDFramework</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-ToolsQA_TestSuite" class="navigator-link ">
-                    <span>C:\Users\Evan\eclipse-workspace\SeleniumPOMToolsQA\testng.xml</span>
+                  <a href="#" panel-name="test-xml-BDDFramework" class="navigator-link ">
+                    <span>C:\Users\Evan\eclipse-workspace\BDDFramework\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-ToolsQA_TestSuite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-BDDFramework" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-ToolsQA_TestSuite" class="navigator-link ">
+                  <a href="#" panel-name="group-BDDFramework" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-ToolsQA_TestSuite" class="navigator-link ">
+                  <a href="#" panel-name="times-BDDFramework" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-ToolsQA_TestSuite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-BDDFramework" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-ToolsQA_TestSuite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-BDDFramework" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-ToolsQA_TestSuite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-BDDFramework" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,56 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-ToolsQA_TestSuite" class="hide-methods passed suite-ToolsQA_TestSuite"> (hide)</a> <!-- hide-methods passed suite-ToolsQA_TestSuite -->
-                      <a href="#" panel-name="suite-ToolsQA_TestSuite" class="show-methods passed suite-ToolsQA_TestSuite"> (show)</a> <!-- show-methods passed suite-ToolsQA_TestSuite -->
+                      <a href="#" panel-name="suite-BDDFramework" class="hide-methods passed suite-BDDFramework"> (hide)</a> <!-- hide-methods passed suite-BDDFramework -->
+                      <a href="#" panel-name="suite-BDDFramework" class="show-methods passed suite-BDDFramework"> (show)</a> <!-- show-methods passed suite-BDDFramework -->
                     </span>
-                    <div class="method-list-content passed suite-ToolsQA_TestSuite">
+                    <div class="method-list-content passed suite-BDDFramework">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ToolsQA_TestSuite" title="test.Alerts_Tests" class="method navigator-link" hash-for-method="AL1">AL1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BDDFramework" title="test.HomePageTests" class="method navigator-link" hash-for-method="validateAnchorBraceletInStore">validateAnchorBraceletInStore</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ToolsQA_TestSuite" title="test.Alerts_Tests" class="method navigator-link" hash-for-method="AL3">AL3</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-BDDFramework" title="test.ContactPageTests" class="method navigator-link" hash-for-method="validateContactPageEmail">validateContactPageEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ToolsQA_TestSuite" title="test.Alerts_Tests" class="method navigator-link" hash-for-method="AL4">AL4</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ToolsQA_TestSuite" title="test.Buttons_Tests" class="method navigator-link" hash-for-method="BT1">BT1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ToolsQA_TestSuite" title="test.Buttons_Tests" class="method navigator-link" hash-for-method="BT2">BT2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ToolsQA_TestSuite" title="test.Browser_Tests" class="method navigator-link" hash-for-method="BW1">BW1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ToolsQA_TestSuite" title="test.TextBox_Tests" class="method navigator-link" hash-for-method="TB1">TB1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ToolsQA_TestSuite" title="test.TextBox_Tests" class="method navigator-link" hash-for-method="TB2">TB2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-ToolsQA_TestSuite -->
+                    </div> <!-- method-list-content passed suite-BDDFramework -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -151,438 +123,172 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-ToolsQA_TestSuite" class="panel ToolsQA_TestSuite">
-          <div class="suite-ToolsQA_TestSuite-class-passed">
+        <div panel-name="suite-BDDFramework" class="panel BDDFramework">
+          <div class="suite-BDDFramework-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.TextBox_Tests</span>
+              <span class="class-name">test.ContactPageTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TB1">
-                  </a> <!-- TB1 -->
-                  <span class="method-name">TB1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TB2">
-                  </a> <!-- TB2 -->
-                  <span class="method-name">TB2</span>
+                  <a name="validateContactPageEmail">
+                  </a> <!-- validateContactPageEmail -->
+                  <span class="method-name">validateContactPageEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ToolsQA_TestSuite-class-passed -->
-          <div class="suite-ToolsQA_TestSuite-class-passed">
+          </div> <!-- suite-BDDFramework-class-passed -->
+          <div class="suite-BDDFramework-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.Browser_Tests</span>
+              <span class="class-name">test.HomePageTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BW1">
-                  </a> <!-- BW1 -->
-                  <span class="method-name">BW1</span>
+                  <a name="validateAnchorBraceletInStore">
+                  </a> <!-- validateAnchorBraceletInStore -->
+                  <span class="method-name">validateAnchorBraceletInStore</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ToolsQA_TestSuite-class-passed -->
-          <div class="suite-ToolsQA_TestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.Buttons_Tests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="BT1">
-                  </a> <!-- BT1 -->
-                  <span class="method-name">BT1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="BT2">
-                  </a> <!-- BT2 -->
-                  <span class="method-name">BT2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ToolsQA_TestSuite-class-passed -->
-          <div class="suite-ToolsQA_TestSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.Alerts_Tests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="AL1">
-                  </a> <!-- AL1 -->
-                  <span class="method-name">AL1</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="AL3">
-                  </a> <!-- AL3 -->
-                  <span class="method-name">AL3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="AL4">
-                  </a> <!-- AL4 -->
-                  <span class="method-name">AL4</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ToolsQA_TestSuite-class-passed -->
-        </div> <!-- panel ToolsQA_TestSuite -->
-        <div panel-name="test-xml-ToolsQA_TestSuite" class="panel">
+          </div> <!-- suite-BDDFramework-class-passed -->
+        </div> <!-- panel BDDFramework -->
+        <div panel-name="test-xml-BDDFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Evan\eclipse-workspace\SeleniumPOMToolsQA\testng.xml</span>
+            <span class="header-content">C:\Users\Evan\eclipse-workspace\BDDFramework\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;classes&quot; name=&quot;ToolsQA_TestSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;4&quot; parallel=&quot;classes&quot; name=&quot;test&quot;&gt;
+&lt;suite name=&quot;BDDFramework&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;version&quot; value=&quot;latest&quot;/&gt;
+  &lt;parameter name=&quot;platform&quot; value=&quot;windows 10&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; parallel=&quot;methods&quot; name=&quot;Sauce1&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.TextBox_Tests&quot;&gt;
+      &lt;class name=&quot;test.HomePageTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;TB1&quot;/&gt;
-          &lt;include name=&quot;TB2&quot;/&gt;
+          &lt;include name=&quot;validateAnchorBraceletInStore&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.TextBox_Tests --&gt;
-      &lt;class name=&quot;test.Buttons_Tests&quot;&gt;
+      &lt;/class&gt; &lt;!-- test.HomePageTests --&gt;
+      &lt;class name=&quot;test.ContactPageTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;BT1&quot;/&gt;
-          &lt;include name=&quot;BT2&quot;/&gt;
+          &lt;include name=&quot;validateContactPageEmail&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.Buttons_Tests --&gt;
-      &lt;class name=&quot;test.Alerts_Tests&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;AL1&quot;/&gt;
-          &lt;include name=&quot;AL3&quot;/&gt;
-          &lt;include name=&quot;AL4&quot;/&gt;
-          &lt;exclude name=&quot;AL2&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.Alerts_Tests --&gt;
-      &lt;class name=&quot;test.Browser_Tests&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;BW1&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- test.Browser_Tests --&gt;
+      &lt;/class&gt; &lt;!-- test.ContactPageTests --&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- test --&gt;
-&lt;/suite&gt; &lt;!-- ToolsQA_TestSuite --&gt;
+  &lt;/test&gt; &lt;!-- Sauce1 --&gt;
+&lt;/suite&gt; &lt;!-- BDDFramework --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-ToolsQA_TestSuite" class="panel">
+        <div panel-name="testlist-BDDFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for ToolsQA_TestSuite</span>
+            <span class="header-content">Tests for BDDFramework</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">test (4 classes)</span>
+                <span class="test-name">Sauce1 (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-ToolsQA_TestSuite" class="panel">
+        <div panel-name="group-BDDFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for ToolsQA_TestSuite</span>
+            <span class="header-content">Groups for BDDFramework</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-ToolsQA_TestSuite" class="panel">
+        <div panel-name="times-BDDFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for ToolsQA_TestSuite</span>
+            <span class="header-content">Times for BDDFramework</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_ToolsQA_TestSuite');
-function tableData_ToolsQA_TestSuite() {
+suiteTableInitFunctions.push('tableData_BDDFramework');
+function tableData_BDDFramework() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'BW1')
-data.setCell(0, 2, 'test.Browser_Tests')
-data.setCell(0, 3, 632);
+data.setCell(0, 1, 'validateAnchorBraceletInStore')
+data.setCell(0, 2, 'test.HomePageTests')
+data.setCell(0, 3, 4588);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'AL3')
-data.setCell(1, 2, 'test.Alerts_Tests')
-data.setCell(1, 3, 426);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TB1')
-data.setCell(2, 2, 'test.TextBox_Tests')
-data.setCell(2, 3, 421);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AL4')
-data.setCell(3, 2, 'test.Alerts_Tests')
-data.setCell(3, 3, 383);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'AL1')
-data.setCell(4, 2, 'test.Alerts_Tests')
-data.setCell(4, 3, 358);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'BT1')
-data.setCell(5, 2, 'test.Buttons_Tests')
-data.setCell(5, 3, 343);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'BT2')
-data.setCell(6, 2, 'test.Buttons_Tests')
-data.setCell(6, 3, 340);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TB2')
-data.setCell(7, 2, 'test.TextBox_Tests')
-data.setCell(7, 3, 324);
-window.suiteTableData['ToolsQA_TestSuite']= { tableData: data, tableDiv: 'times-div-ToolsQA_TestSuite'}
+data.setCell(1, 1, 'validateContactPageEmail')
+data.setCell(1, 2, 'test.ContactPageTests')
+data.setCell(1, 3, 2812);
+window.suiteTableData['BDDFramework']= { tableData: data, tableDiv: 'times-div-BDDFramework'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
-              <div id="times-div-ToolsQA_TestSuite">
-              </div> <!-- times-div-ToolsQA_TestSuite -->
+              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <div id="times-div-BDDFramework">
+              </div> <!-- times-div-BDDFramework -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-ToolsQA_TestSuite" class="panel">
+        <div panel-name="reporter-BDDFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for ToolsQA_TestSuite</span>
+            <span class="header-content">Reporter output for BDDFramework</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-ToolsQA_TestSuite" class="panel">
+        <div panel-name="ignored-methods-BDDFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.Browser_Tests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.Buttons_Tests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.Alerts_Tests</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpTest</span>
-                <br/>
-                <span class="ignored-method-name">AL2</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-ToolsQA_TestSuite" class="panel">
+        <div panel-name="chronological-BDDFramework" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.TextBox_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">setUpTest</span>
+              <div class="chronological-class-name">test.HomePageTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(firefox, windows 10, latest, public void test.HomePageTests.validateAnchorBraceletInStore() throws j...)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Buttons_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">getLandingPage</span>
-                <span class="method-start">24 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TextBox_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">getLandingPage</span>
-                <span class="method-start">24 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Alerts_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">getLandingPage</span>
-                <span class="method-start">25 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Browser_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">getLandingPage</span>
-                <span class="method-start">25 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">BrowserTestSetup</span>
-                <span class="method-start">4150 ms</span>
+                <span class="method-name">homePageTestSetup</span>
+                <span class="method-start">6536 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">BW1</span>
-                <span class="method-start">4266 ms</span>
+                <span class="method-name">validateAnchorBraceletInStore</span>
+                <span class="method-start">6542 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">test.TextBox_Tests</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.ContactPageTests</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">TextBoxTestSetup</span>
-                <span class="method-start">4432 ms</span>
+                <span class="method-name">setUp(firefox, windows 10, latest, public void test.ContactPageTests.validateContactPageEmail() throws jav...)</span>
+                <span class="method-start">11135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">homePageTestSetup</span>
+                <span class="method-start">15241 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TB1</span>
-                <span class="method-start">4683 ms</span>
+                <span class="method-name">validateContactPageEmail</span>
+                <span class="method-start">15255 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Browser_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">4901 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TextBox_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">5105 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Buttons_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">AlertsTestSetup</span>
-                <span class="method-start">5518 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">BT1</span>
-                <span class="method-start">5660 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">6004 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Alerts_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">AlertsTestSetup</span>
-                <span class="method-start">6478 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">AL1</span>
-                <span class="method-start">6616 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">6975 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TextBox_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">getLandingPage</span>
-                <span class="method-start">9294 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Buttons_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">getLandingPage</span>
-                <span class="method-start">10202 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Alerts_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">getLandingPage</span>
-                <span class="method-start">11175 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TextBox_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">TextBoxTestSetup</span>
-                <span class="method-start">12392 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TB2</span>
-                <span class="method-start">12624 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">12949 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Buttons_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">AlertsTestSetup</span>
-                <span class="method-start">13288 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">BT2</span>
-                <span class="method-start">13412 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">13753 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.Alerts_Tests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">AlertsTestSetup</span>
-                <span class="method-start">14297 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">AL3</span>
-                <span class="method-start">14417 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">14844 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">getLandingPage</span>
-                <span class="method-start">19076 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">AlertsTestSetup</span>
-                <span class="method-start">21970 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">AL4</span>
-                <span class="method-start">22072 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">22456 ms</span>
-              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

@@ -1,151 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="12" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-03T17:21:41 MST" name="ToolsQA_TestSuite" finished-at="2022-01-03T17:22:08 MST" duration-ms="26675">
+  <suite started-at="2022-09-26T09:43:14 CDT" name="BDDFramework" finished-at="2022-09-26T09:43:32 CDT" duration-ms="18117">
     <groups>
     </groups>
-    <test started-at="2022-01-03T17:21:41 MST" name="test" finished-at="2022-01-03T17:22:08 MST" duration-ms="26675">
-      <class name="test.Buttons_Tests">
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:41 MST" name="getLandingPage" finished-at="2022-01-03T17:21:47 MST" duration-ms="5494" status="PASS">
+    <test started-at="2022-09-26T09:43:14 CDT" name="Sauce1" finished-at="2022-09-26T09:43:32 CDT" duration-ms="18117">
+      <class name="test.HomePageTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.HomePageTests@31d7b7bf]" started-at="2022-09-26T09:43:14 CDT" name="setUp" finished-at="2022-09-26T09:43:20 CDT" duration-ms="6533" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void test.HomePageTests.validateAnchorBraceletInStore() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:47 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:21:47 MST" duration-ms="142" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="homePageTestSetup()[pri:0, instance:test.HomePageTests@31d7b7bf]" started-at="2022-09-26T09:43:20 CDT" name="homePageTestSetup" finished-at="2022-09-26T09:43:20 CDT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AlertsTestSetup -->
-        <test-method signature="BT1()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:47 MST" name="BT1" finished-at="2022-01-03T17:21:47 MST" duration-ms="343" status="PASS">
+        </test-method> <!-- homePageTestSetup -->
+        <test-method signature="validateAnchorBraceletInStore()[pri:0, instance:test.HomePageTests@31d7b7bf]" started-at="2022-09-26T09:43:20 CDT" name="validateAnchorBraceletInStore" finished-at="2022-09-26T09:43:25 CDT" duration-ms="4588" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BT1 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:47 MST" name="tearDownTest" finished-at="2022-01-03T17:21:51 MST" duration-ms="4197" status="PASS">
+        </test-method> <!-- validateAnchorBraceletInStore -->
+      </class> <!-- test.HomePageTests -->
+      <class name="test.ContactPageTests">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)[pri:0, instance:test.ContactPageTests@441772e]" started-at="2022-09-26T09:43:25 CDT" name="setUp" finished-at="2022-09-26T09:43:29 CDT" duration-ms="4106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[windows 10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[latest]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void test.ContactPageTests.validateContactPageEmail() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:51 MST" name="getLandingPage" finished-at="2022-01-03T17:21:55 MST" duration-ms="3086" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="homePageTestSetup()[pri:0, instance:test.ContactPageTests@441772e]" started-at="2022-09-26T09:43:29 CDT" name="homePageTestSetup" finished-at="2022-09-26T09:43:29 CDT" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:55 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:21:55 MST" duration-ms="124" status="PASS">
+        </test-method> <!-- homePageTestSetup -->
+        <test-method signature="validateContactPageEmail()[pri:0, instance:test.ContactPageTests@441772e]" started-at="2022-09-26T09:43:29 CDT" name="validateContactPageEmail" finished-at="2022-09-26T09:43:32 CDT" duration-ms="2812" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AlertsTestSetup -->
-        <test-method signature="BT2()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:55 MST" name="BT2" finished-at="2022-01-03T17:21:55 MST" duration-ms="340" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BT2 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Buttons_Tests@d6e7bab]" started-at="2022-01-03T17:21:55 MST" name="tearDownTest" finished-at="2022-01-03T17:21:55 MST" duration-ms="97" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-      </class> <!-- test.Buttons_Tests -->
-      <class name="test.Browser_Tests">
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Browser_Tests@55b53d44]" started-at="2022-01-03T17:21:41 MST" name="getLandingPage" finished-at="2022-01-03T17:21:45 MST" duration-ms="4125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="BrowserTestSetup()[pri:0, instance:test.Browser_Tests@55b53d44]" started-at="2022-01-03T17:21:45 MST" name="BrowserTestSetup" finished-at="2022-01-03T17:21:46 MST" duration-ms="115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserTestSetup -->
-        <test-method signature="BW1()[pri:0, instance:test.Browser_Tests@55b53d44]" started-at="2022-01-03T17:21:46 MST" name="BW1" finished-at="2022-01-03T17:21:46 MST" duration-ms="632" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BW1 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Browser_Tests@55b53d44]" started-at="2022-01-03T17:21:46 MST" name="tearDownTest" finished-at="2022-01-03T17:21:46 MST" duration-ms="135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-      </class> <!-- test.Browser_Tests -->
-      <class name="test.TextBox_Tests">
-        <test-method is-config="true" signature="setUpTest()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:41 MST" name="setUpTest" finished-at="2022-01-03T17:21:41 MST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:41 MST" name="getLandingPage" finished-at="2022-01-03T17:21:46 MST" duration-ms="4408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="TextBoxTestSetup()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:46 MST" name="TextBoxTestSetup" finished-at="2022-01-03T17:21:46 MST" duration-ms="251" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TextBoxTestSetup -->
-        <test-method signature="TB1()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:46 MST" name="TB1" finished-at="2022-01-03T17:21:46 MST" duration-ms="421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TB1 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:46 MST" name="tearDownTest" finished-at="2022-01-03T17:21:51 MST" duration-ms="4189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:51 MST" name="getLandingPage" finished-at="2022-01-03T17:21:54 MST" duration-ms="3097" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="TextBoxTestSetup()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:54 MST" name="TextBoxTestSetup" finished-at="2022-01-03T17:21:54 MST" duration-ms="232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TextBoxTestSetup -->
-        <test-method signature="TB2()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:54 MST" name="TB2" finished-at="2022-01-03T17:21:54 MST" duration-ms="324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TB2 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.TextBox_Tests@3315d2d7]" started-at="2022-01-03T17:21:54 MST" name="tearDownTest" finished-at="2022-01-03T17:21:54 MST" duration-ms="119" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-      </class> <!-- test.TextBox_Tests -->
-      <class name="test.Alerts_Tests">
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:41 MST" name="getLandingPage" finished-at="2022-01-03T17:21:48 MST" duration-ms="6453" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:48 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:21:48 MST" duration-ms="138" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AlertsTestSetup -->
-        <test-method signature="AL1()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:48 MST" name="AL1" finished-at="2022-01-03T17:21:48 MST" duration-ms="358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AL1 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:48 MST" name="tearDownTest" finished-at="2022-01-03T17:21:52 MST" duration-ms="4199" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:52 MST" name="getLandingPage" finished-at="2022-01-03T17:21:56 MST" duration-ms="3121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:56 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:21:56 MST" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AlertsTestSetup -->
-        <test-method signature="AL3()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:56 MST" name="AL3" finished-at="2022-01-03T17:21:56 MST" duration-ms="426" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AL3 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:21:56 MST" name="tearDownTest" finished-at="2022-01-03T17:22:00 MST" duration-ms="4232" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="getLandingPage()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:22:00 MST" name="getLandingPage" finished-at="2022-01-03T17:22:03 MST" duration-ms="2893" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLandingPage -->
-        <test-method is-config="true" signature="AlertsTestSetup()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:22:03 MST" name="AlertsTestSetup" finished-at="2022-01-03T17:22:03 MST" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AlertsTestSetup -->
-        <test-method signature="AL4()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:22:03 MST" name="AL4" finished-at="2022-01-03T17:22:04 MST" duration-ms="383" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AL4 -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:test.Alerts_Tests@5fa07e12]" started-at="2022-01-03T17:22:04 MST" name="tearDownTest" finished-at="2022-01-03T17:22:08 MST" duration-ms="4224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-      </class> <!-- test.Alerts_Tests -->
-    </test> <!-- test -->
-  </suite> <!-- ToolsQA_TestSuite -->
+        </test-method> <!-- validateContactPageEmail -->
+      </class> <!-- test.ContactPageTests -->
+    </test> <!-- Sauce1 -->
+  </suite> <!-- BDDFramework -->
 </testng-results>

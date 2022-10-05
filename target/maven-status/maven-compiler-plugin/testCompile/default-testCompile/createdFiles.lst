@@ -1,0 +1,8 @@
+test\HomePageTests.class
+test\ReadPropertiesFile.class
+test\Test_Utilities.class
+pages\HomePageObjects.class
+pages\ContactPageObjects.class
+test\ReadPropFile2.class
+test\ContactPageTests.class
+test\TestBaseSetup.class

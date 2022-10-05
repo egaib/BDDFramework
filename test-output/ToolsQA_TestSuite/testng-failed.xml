@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="classes" name="Failed suite [ToolsQA_TestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="classes" name="test(failed)">
+  <test thread-count="5" parallel="classes" name="Sauce1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="version" value="latest"/>
+    <parameter name="platform" value="windows 10"/>
     <classes>
-      <class name="test.Alerts_Tests">
+      <class name="test.TextBox_Tests">
         <methods>
-          <include name="AL3"/>
-          <include name="setUpTest"/>
-          <include name="AlertsTestSetup"/>
-          <include name="AL4"/>
-          <include name="AL2"/>
-          <include name="getLandingPage"/>
+          <include name="TextBoxTestSetup"/>
+          <include name="setUp"/>
           <include name="tearDownTest"/>
-          <include name="AL1"/>
+          <include name="TB1"/>
         </methods>
-      </class> <!-- test.Alerts_Tests -->
+      </class> <!-- test.TextBox_Tests -->
     </classes>
-  </test> <!-- test(failed) -->
+  </test> <!-- Sauce1(failed) -->
 </suite> <!-- Failed suite [ToolsQA_TestSuite] -->
