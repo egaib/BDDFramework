@@ -6,8 +6,10 @@ import org.openqa.selenium.WebDriver;
 import test.HomePageTests;
 import test.TestBaseSetup;
 
-public class ContactPageObjects extends TestBaseSetup {
+public class ContactPageObjects {
 
+	//extends TestBaseSetup
+	
 	WebDriver driver;
 
 	private By homeContactTab = By.xpath("//li/*[contains(text(),'Contact Us')]");

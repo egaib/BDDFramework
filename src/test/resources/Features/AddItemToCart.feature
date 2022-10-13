@@ -1,20 +1,13 @@
-Feature: AddItemToCart
+Feature: Add Items To Cart
 
   @TestID=10000 @Author=EG @Regression
-  Scenario: The user is able to add an Item to the Cart
-    Given The browser is open and website is loaded
+  Scenario: The user is able to add a Anchor Bracelet to the Cart
+    Given The website is loaded
 		And The user adds an Item to the cart
     When The user navigates to the cart
     Then The item is displayed in the cart
 
 
-#Move whats in Test folder (contactPageTests, HomePageTests) into StepDefs
-
-#Replace beforemethod stuff with Given Browser is Open
-
-#create 2nd feature file
-#run cucumber feature files in parallel
-
 #appAddItem
 #appCheckout
-#implement page factory
+#implement page factory testng
