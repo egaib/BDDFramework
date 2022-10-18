@@ -1,29 +1,21 @@
 package pages;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import junit.framework.Assert;
-import test.HomePageTests;
-import test.TestBaseSetup;
-
 public class HomePageObjects {
 
-	//may need to pass threadlocal driver here
-	WebDriver driver;
+	private WebDriver driver;
 
-	By homeStoreTab = By.xpath("//li/*[contains(text(),'Store')]");
-	By anchorBraceletTextLink = By.xpath("//div/a/*[contains(text(),'Anchor')]");
-	By productName = By.xpath("//h1[contains(@class,\"product_title\")]");
-	By addToCart = By.xpath("//button[contains(text(),'Add to cart')]");
-	By cartLinkWithCount = By.xpath("//*[@class='cart-container']");
-	By anchorBraceletInCart = By.xpath("//td[contains(@class,'product-name')]/a[contains(text(),'Anchor Bracelet')]");
-	By addToCartNotice = By.xpath("//div[@class='woocommerce-message']");
+	private By homeStoreTab = By.xpath("//li/*[contains(text(),'Store')]");
+	private By anchorBraceletTextLink = By.xpath("//div/a/*[contains(text(),'Anchor')]");
+	private By productName = By.xpath("//h1[contains(@class,\"product_title\")]");
+	private By addToCart = By.xpath("//button[contains(text(),'Add to cart')]");
+	private By cartLinkWithCount = By.xpath("//*[@class='cart-container']");
+	private By anchorBraceletInCart = By.xpath("//td[contains(@class,'product-name')]/a[contains(text(),'Anchor Bracelet')]");
+	private By addToCartNotice = By.xpath("//div[@class='woocommerce-message']");
 
 	public HomePageObjects(WebDriver driver) {
 		//120 replace with getdriver()..
@@ -31,11 +23,7 @@ public class HomePageObjects {
 	}
 
 	public boolean validateAnchorBraceletInCart() {
-		if (driver.findElement(anchorBraceletInCart).isDisplayed()) {
-			return true;
-		} else {
-			return false;
-		}
+		return driver.findElement(anchorBraceletInCart).isDisplayed();
 	}
 
 	public void clickCartLinkWithCount() {

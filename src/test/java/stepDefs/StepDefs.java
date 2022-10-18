@@ -1,34 +1,23 @@
 package stepDefs;
 
-import java.io.FileInputStream;
-import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
+import pages.*;
+import components.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import appLib.MainLib;
-import components.GlobalVariables;
-import components.DriverFactory;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-
-import pages.ContactPageObjects;
-import pages.HomePageObjects;
 
 public class StepDefs extends DriverFactory {
 
-	//	public static WebDriver driver;
-//	public ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();	
-
-//35:30
+	private DriverFactory driverFactory;
+	private WebDriver driver;
+	
+	private ContactPageObjects contactPageOjb = new ContactPageObjects(getDriver());
+	private HomePageObjects homePageObj = new HomePageObjects(getDriver());
 	
 	//setDriver(new DriverFactory.createDriver();
 	//120, 4:00, 
@@ -36,7 +25,8 @@ public class StepDefs extends DriverFactory {
 	// <Hooks>
 	@Before (value="@Regression", order=1)
 	public void browserSetup() {
-		DriverFactory.createDriver();
+		driverFactory = new DriverFactory();
+		driver = driverFactory.createDriver();
 		//setDriver(new DriverFactory.createDriver();
 		System.out.println("Setup:");
 		System.out.println("Thread Name: " + Thread.currentThread().getName());
@@ -48,7 +38,7 @@ public class StepDefs extends DriverFactory {
 		System.out.println("Teardown: ");
 		System.out.println("Thread Name: " + Thread.currentThread().getName());
 		System.out.println("Thread ID: " + Thread.currentThread().getId());
-		driver.get().quit();
+		getDriver().quit();
 	//	Don't set driver = null unless using parallel execution
 		//driver = null; 
 	} 	
@@ -57,7 +47,7 @@ public class StepDefs extends DriverFactory {
 	
 	@Given("The website is loaded")
 	public void the_website_is_loaded() {
-		driver.get().get(url);
+		getDriver().get(url);
 	}
 
 	@Given("The user adds an Item to the cart")
