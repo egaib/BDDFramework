@@ -25,15 +25,29 @@ import pages.HomePageObjects;
 
 public class StepDefs extends DriverFactory {
 
+	//	public static WebDriver driver;
+//	public ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();	
+
+//35:30
+	
+	//setDriver(new DriverFactory.createDriver();
+	//120, 4:00, 
+		
 	// <Hooks>
 	@Before (value="@Regression", order=1)
 	public void browserSetup() {
 		DriverFactory.createDriver();
+		//setDriver(new DriverFactory.createDriver();
+		System.out.println("Setup:");
+		System.out.println("Thread Name: " + Thread.currentThread().getName());
+		System.out.println("Thread ID: " + Thread.currentThread().getId());
 	}
 
 	@After
 	public void tearDown() {
-		System.out.println("Quitting driver.");
+		System.out.println("Teardown: ");
+		System.out.println("Thread Name: " + Thread.currentThread().getName());
+		System.out.println("Thread ID: " + Thread.currentThread().getId());
 		driver.get().quit();
 	//	Don't set driver = null unless using parallel execution
 		//driver = null; 

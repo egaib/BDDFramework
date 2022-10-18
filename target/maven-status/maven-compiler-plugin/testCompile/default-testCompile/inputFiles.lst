@@ -1,7 +1,7 @@
 C:\Users\Evan\eclipse-workspace\BDDFramework\src\test\java\cucumberRunner\CucumberTest.java
 C:\Users\Evan\eclipse-workspace\BDDFramework\src\test\java\test\TestBaseSetup.java
 C:\Users\Evan\eclipse-workspace\BDDFramework\src\test\java\pages\HomePageObjects.java
-C:\Users\Evan\eclipse-workspace\BDDFramework\src\test\java\StepDefs\StepDefs.java
+C:\Users\Evan\eclipse-workspace\BDDFramework\src\test\java\stepDefs\StepDefs.java
 C:\Users\Evan\eclipse-workspace\BDDFramework\src\test\java\appLib\MainLib.java
 C:\Users\Evan\eclipse-workspace\BDDFramework\src\test\java\pages\ContactPageObjects.java
 C:\Users\Evan\eclipse-workspace\BDDFramework\src\test\java\components\GlobalVariables.java

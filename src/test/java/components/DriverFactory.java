@@ -26,21 +26,16 @@ public class DriverFactory {
 	public static ContactPageObjects contactPageOjb;
 	public static HomePageObjects homePageObj;
 
-	//	public static WebDriver driver;
 	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();	
 
-	// used to refer from other classes
-//		public void setDriver(WebDriver driver) {
-//			this.driver.set(driver);
-//		}
-//		
-//		protected WebDriver getDriver() {
-//			return this.driver.get();
-//		}
-
-	public static void createDriver() {
+/**
+ * 
+ * @return
+ */
+	public static WebDriver createDriver() {
 
 		try {
+			// move properties file read to util pt2/30:00
 			FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\config.properties");
 			prop = new Properties();
 			prop.load(fis);
@@ -60,11 +55,14 @@ public class DriverFactory {
 				driver.set(new EdgeDriver());
 			}
 
+			
 			//		}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 
+		
+		
 		driver.get().manage().timeouts().setScriptTimeout(4, TimeUnit.SECONDS);
 		driver.get().manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		driver.get().manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
@@ -72,12 +70,25 @@ public class DriverFactory {
 
 		contactPageOjb = new ContactPageObjects(driver.get());
 		homePageObj = new HomePageObjects(driver.get());
-
 		
+		return getDriver();
+
+	}
 		//DesiredCapabilities for each of 3 browsers
 		
 		//RemoteWebDriver 
 		
+//		 used to refer from other classes
+		public static synchronized WebDriver getDriver() {
+			return driver.get();
+		}
 		
-	}
+		public void setDriver(WebDriver driver) {
+				this.driver.set(driver);
+			}
+			
+			
+		
+		
+	
 }
