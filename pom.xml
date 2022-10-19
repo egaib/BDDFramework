@@ -34,9 +34,9 @@
 					<version>3.0.0-M7</version>
 					<executions>
 						<execution>
-							<goals>
-								<goal>integration-test</goal>
-							</goals>
+							<!-- <goals>
+								<goal>test</goal>
+							</goals>-->
 							<configuration>
 								<includes>
 									<include>**/CucumberTest.java</include>

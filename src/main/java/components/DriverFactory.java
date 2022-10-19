@@ -13,59 +13,34 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 
-
-	public static Properties prop;
-
-	public static String url;
-	public static String browserName;
-
-
-//	public WebDriver driver2;
-	
-	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();	
+	public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();	
 
 	/**
-	 * Used to initialize the threadlocal driver
+	 * Method used to initialize the Threadlocal driver
 	 * @return thread local driver
 	 */
-	public static WebDriver createDriver() {
+	public WebDriver createDriver(String browserName) {
 
-		try {
-			// move properties file read to util pt2/30:00
-			FileInputStream fis=new FileInputStream(".\\src\\test\\resources\\config.properties");
-			prop = new Properties();
-			prop.load(fis);
-			browserName = prop.getProperty("browser");
-			url = prop.getProperty("url");
-
-			//			if (driver==null) {
-			if (browserName.equalsIgnoreCase("chrome")) {
-				WebDriverManager.chromedriver().setup();
-				driver.set(new ChromeDriver());
-				//driver = new ChromeDriver();
-			} else if (browserName.equalsIgnoreCase("firefox")) {
-				WebDriverManager.firefoxdriver().setup();
-				driver.set(new FirefoxDriver());
-			} else if (browserName.equalsIgnoreCase("edge")) {
-				WebDriverManager.edgedriver().setup();
-				driver.set(new EdgeDriver());
-			}
-
-
-			//		}
-		} catch (Exception e) {
-			e.printStackTrace();
+		if (browserName.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver.set(new ChromeDriver());
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver.set(new FirefoxDriver());
+		} else if (browserName.equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver.set(new EdgeDriver());
+		} else {
+			System.out.println(browserName + "is not a valid browser name.");
 		}
-
-
 
 		getDriver().manage().timeouts().setScriptTimeout(4, TimeUnit.SECONDS);
 		getDriver().manage().timeouts().implicitlyWait(4, TimeUnit.SECONDS);
 		getDriver().manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		getDriver().manage().window().maximize();
 
-//		contactPageOjb = new ContactPageObjects(driver.get());
-//		homePageObj = new HomePageObjects(driver.get());
+		//		contactPageOjb = new ContactPageObjects(driver.get());
+		//		homePageObj = new HomePageObjects(driver.get());
 
 		return getDriver();
 
@@ -74,15 +49,18 @@ public class DriverFactory {
 
 	//RemoteWebDriver 
 
-	//		 used to refer from other classes
+	/**
+	 * used to get the driver with Threadlocal
+	 * @return
+	 */
 	public static synchronized WebDriver getDriver() {
 		//calling this returns the threadlocal instance
 		return driver.get();
 	}
 
-	public void setDriver(WebDriver driver) {
-		this.driver.set(driver);
-	}
+//	public void setDriver(WebDriver driver) {
+//		this.driver.set(driver);
+//	}
 
 
 

@@ -18,7 +18,6 @@ public class HomePageObjects {
 	private By addToCartNotice = By.xpath("//div[@class='woocommerce-message']");
 
 	public HomePageObjects(WebDriver driver) {
-		//120 replace with getdriver()..
 		this.driver = driver;
 	}
 

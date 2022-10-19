@@ -1,4 +1,5 @@
+stepDefs\StoreStepDefs.class
 pages\HomePageObjects.class
+stepDefs\Hooks.class
 cucumberRunner\CucumberTest.class
 pages\ContactPageObjects.class
-stepDefs\StepDefs.class

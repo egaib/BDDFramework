@@ -2,7 +2,7 @@ package components;
 
 import org.openqa.selenium.WebDriver;
 
-public class GlobalVariables {
+public class Constants {
 
 	//	Constants
 	//	public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();

@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 
 public class ContactPageObjects {
 
-	//extends TestBaseSetup
-	
 	private WebDriver driver;
 
 	private By homeContactTab = By.xpath("//li/*[contains(text(),'Contact Us')]");
